@@ -4,6 +4,6 @@ n = int(input("enter the length of the password : "))
 
 def passwordgen(n):
   char = string.ascii_letters +string.digits + string.punctuation
-  pass = "".join(random.choice(char) for i in range(n))
-  return pass
-print(passwordgen())
+  passw = "".join(random.choice(char) for i in range(n))
+  return passw
+print(passwordgen(n))
